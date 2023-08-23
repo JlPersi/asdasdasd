@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    height: 100px;
+    background-color: black;
+    z-index: 2;
+}
+
+span{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+span:hover{
+    color: #e5989b;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color:#e5989b !important;
+}
+
+.nav-item{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.h2main{
+    background-color: #450920;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 10px;
+    border: solid 5px black;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+
+.cleft{
+    width: 50%;
+    background-color: #e5989b;
+    margin-top: 0px;
+    height: 400px;
+    text-align: center;
+    padding: 50px;
+}
+
+.cright{
+    background-image: url(imagenes/30cf867b-1c01-4c14-a9ac-da0166a3fb70.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    float: right;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.redes{
+    padding: 3px;
+}
+
+/* Nosotros */
+.mainnosotros{
+    background-color:#e5989b;
+    height: 755px;
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+    border: 5px solid black; 
+}
+.mainnosotros h1{
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    background-color: #370617;
+}
+
+
+/* CONTACTOS */
+
+.maincontacto{
+    height: 765px;
+    width: 100%;
+    background-color: #e5989b;
+}
+
+.maincontacto h1{
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    background-color: #370617;
+}
+
+.iconwpp{
+    font-size: 75px;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.iconphone{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+}
+
+.iconemail{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+}
+
+/* Ubicacion */
+
+.mainubicacion{
+    width: 100%;
+    height: 760px;
+    background-color:#e5989b;
+}
+
+.mainubicacion .mapaclub{
+    width: auto;
+    height: auto;
+    padding: 50px 50px;
+}
+
+.pmain{
+   width: 50%;
+   background-color: #370617;
+   color: white;
+   font-size: 50px;
+   justify-content: center;
+   text-align: center;
+   padding: 50px 50px;
+   margin-top: 20px;
+}
+
+/* Galeria */
+
+.galeria{
+    height: 900px;
+    width: 100%;
+    background: linear-gradient(#ffc2d1, #e5989b);
+    margin: 0;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 200px);
+}
+
+.h2galeria h2{
+    text-align: center;
+    background-color: #e5989b;
+    margin: 0px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.item{
+    border: 5px solid white;
+    background-position: center;
+    background-size: cover;
+}
+
+.item1{
+    background-image: url(imagenes/galeria1.jpg);
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+}
+
+.item2{
+    background-image: url(imagenes/galeria2.jpg);
+    /* grid-column: 2/3;
+    grid-row: 1/2; */
+}
+
+.item3{
+    background-image: url(imagenes/galeria3.jpeg);
+    /* grid-column: 3/5;
+    grid-row: 1/3; */
+}
+
+.item4{
+    background-image: url(imagenes/galeria4.jpeg);
+    /* grid-column: 1/3;
+    grid-row: 2/3; */
+}
+
+.item5{
+    background-image: url(imagenes/galeria5.jpg);
+    /* grid-column: 1/3;
+    grid-row: 3/4; */
+}
+
+.item6{
+    background-image: url(imagenes/galeria6.jpg);
+    /* grid-column: 3/5;
+    grid-row: 3/4; */
+}
+
+/* MEDIAS QUERYS */
+
+@media only screen and (min-width:0) and (max-width:532px){
+    span{
+        font-size: 20px;
+        color: white;
+    }
+    .navbar-collapse{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+    }
+    .carousel1 ul{
+        z-index: 1;
+    }
+    .h2main{
+        height: 40px;
+        width:100%;
+        padding: 0px;
+    }
+    .h2main h2{
+        font-size: 14px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .contenedores1{
+        height: 590px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .cleft{
+        height: 100%;
+        width: 50%;
+        padding: 0px;
+    }
+    .contenedores1.cleft p{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center; 
+    }
+    
+    .cright{
+        height: 100%;
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .galeria{
+        grid-template-columns: repeat(1,1fr);
+        height: auto;
+    }
+    .h2galeria h2{
+        padding: 0px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:532px) and (max-width:768px){
+    span{
+        font-size: 30px;
+        color: white;
+    }
+    .navbar-collapse{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+    }
+    .carousel1 ul{
+        z-index: 1;
+    }
+    .contenedores1{
+        height: 590px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .cleft{
+        height: 100%;
+        width: 50%;
+        padding: 0px;
+    }
+    .contenedores1 .cleft p{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+        text-align: center; 
+    }
+    
+    .cright{
+        height: 100%;
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .h2galeria h2{
+        padding: 0px;
+        font-size: 35px;
+    }
+    
+}
+
+@media only screen and (min-width:768px) and (max-width:990px){
+    span{
+        font-size: 30px;
+        color: white;
+        padding: 0px
+    }
+    .navbar-collapse{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .carousel1 ul{
+        z-index: 1;
+    }
+
+    .nav-item{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    a.nav-link{
+        padding: 0px;
+    }
+
+    .navbar{
+        display: flex;
+    }
+    .galeria{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,450px);
+    }
+    .h2galeria h2{
+        padding: 0px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width:990px) and (max-width:2440px){
+    span{
+        font-size: 30px;
+        color: white;
+        padding: 0px
+    }
+    .nav-item{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    a.nav-link{
+        padding: 0px;
+    }
+
+    .navbar{
+        display: flex;
+    }
+    .h2galeria h2{
+        font-size: 40px;
+        padding: 0px;
+    }
+    .galeria{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,300px);
+    }
+  
+    .item3{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+    .item4{
+        grid-column: 1/3;
+    }
+    .item5{
+        grid-column: 1/3;
+    }
+    .item6{
+        grid-column: 3/5;
+    }
+}
+
+
+
